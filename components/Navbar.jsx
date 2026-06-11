@@ -21,6 +21,7 @@ export default function Navbar() {
         {/* Desktop Links */}
         <ul className="hidden md:flex gap-8 text-gray-700 dark:text-gray-300 font-medium">
           <li><Link href="/" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</Link></li>
+          <li><Link href="/dashboard" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Dashboard</Link></li>
           <li><Link href="#about" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</Link></li>
           <li><Link href="#projects" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Projects</Link></li>
           <li><Link href="#contact" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Contact</Link></li>
@@ -72,6 +73,7 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 px-6 pb-4 flex flex-col gap-4 text-gray-700 dark:text-gray-300 font-medium border-t dark:border-gray-700">
           <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link href="/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</Link>
           <Link href="#about" onClick={() => setMenuOpen(false)}>About</Link>
           <Link href="#projects" onClick={() => setMenuOpen(false)}>Projects</Link>
           <Link href="#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
